@@ -1,5 +1,3 @@
-# Node Exporter Setup for Prometheus Monitoring
-
 ## Metrics 
 There are two types of metrics:-
 
@@ -30,4 +28,5 @@ Example of such agent is node-exporter.
 
 ## Reference
 https://prometheus.io/docs/guides/node-exporter/#installing-and-running-the-node-exporter  
+  
 https://developer.couchbase.com/tutorial-node-exporter-setup/
