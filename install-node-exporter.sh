@@ -3,9 +3,9 @@ sudo useradd --no-create-home node_exporter
 echo "Created node_exporter user"
 
 # Getting the architecture of machine 
-ARCHITECTURE=$(uname -m)
+Architecture=$(uname -m)
 
-if [[ "$ARCHITECTURE" == "x86_64" ]]; then
+if [[ "$Architecture" == "x86_64" ]]; then
     echo "Architecture: AMD64 (x86_64)"
 # Downloading the node-exporter tar file for amd machine 
     sudo curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.9.1/node_exporter-1.9.1.linux-amd64.tar.gz
@@ -18,7 +18,7 @@ if [[ "$ARCHITECTURE" == "x86_64" ]]; then
 # Removing the downloaded file and extracted file
     sudo rm -rf node_exporter-1.9.1.linux-amd64.tar.gz node_exporter-1.9.1.linux-amd64
 
-elif [[ "$ARCHITECTURE" == "aarch64" ]]; then
+elif [[ "$Architecture" == "aarch64" ]]; then
     echo "Architecture: ARM64 (aarch64)"
 
 # Downloading the node-exporter tar file for arm machine
