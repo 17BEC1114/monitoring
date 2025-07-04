@@ -9,13 +9,13 @@ There are two types of metrics:-
 **Application Metrics**: Collected from your application - things it knows about itself.
 - Examples: Number of requests served, Response times, Error rates, Queue lengths, Custom business metrics (e.g., number of signups) 
 
+  
 These metrics are used to monitor the performance of a machine/instance/server or an application whether its working fine or not. 
 
-In case of application, it collects its own metrics from the application and exposes it on a particular port or path. 
+In case of application, it collects its own metrics from the application and exposes it on a particular port or path.  
 Example: application.com/metrics, application.com:7586
 
-
-In case of server, these metrics are not exposed by default on a port or path. The metrics just sits there with OS. An agent needs to collect these metrics from the OS/Environment. 
+In case of server, these metrics are not exposed by default on a port or path. The metrics just sits there with OS. An agent needs to collect these metrics from the OS/Environment.  
 Example of such agent is node-exporter. 
 
 
