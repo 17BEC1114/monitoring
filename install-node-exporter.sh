@@ -63,3 +63,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable node-exporter
 sudo systemctl start node-exporter
 sudo systemctl status node-exporter
+
+
+# If firewalld is enabled and running, add a rule for port 9400
+# sudo firewall-cmd --permanent --zone=public --add-port=9400/tcp
+# sudo firewall-cmd --reload
