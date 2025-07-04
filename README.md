@@ -1,7 +1,8 @@
 # Node Exporter Setup for Prometheus Monitoring
 
 ## Metrics 
-There are two types of metrics: 
+There are two types of metrics:-
+
 System Metrics: Collected from the host machine or environment((Server/Infrastructure))
 - Examples: CPU usage, Memory, disk, network I/O, Load average, Filesystem usage , Host uptime 
 
@@ -11,7 +12,7 @@ Application Metrics: Collected from your application — things it knows about i
 These metrics are used to monitor the performance of a machine/instance/server or an application whether its working fine or not. 
 
 In case of application, it collects its own metrics from the application and exposes it on a particular port or path. 
-Example: application.com/metrics, application.com:<port-number> 
+Example: application.com/metrics, application.com:7586
 
 
 In case of server, these metrics are not exposed by default on a port or path. The metrics just sits there with OS. An agent needs to collect these metrics from the OS/Environment. 
