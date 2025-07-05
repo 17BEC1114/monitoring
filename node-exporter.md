@@ -1,4 +1,6 @@
 ## Metrics 
+Metrics are numerical measurements in layperson terms.  
+  
 There are two types of metrics:-
 
 **System Metrics**: Collected from the host machine or environment (Server/Infrastructure)
