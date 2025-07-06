@@ -6,7 +6,8 @@
 - These metrics need to be stored with **timestamps**.
 - We need a **time-series database** which can store these metrics over a period of time.
 
----
+  
+  
 
 ## **Prometheus**
 
@@ -16,7 +17,8 @@
 - These **HTTP endpoints** are the ports/paths where node exporter is exporting the metrics.
 - The **targets** are the nodes/instances from which Prometheus will collect the metrics.
 
----
+  
+  
 
 ### When user downloads Prometheus tar file, you get below files and directories:
 
@@ -27,8 +29,8 @@
 | **Console_libraries** | A directory containing shared helper libraries (written in Go templates) used by the Prometheus web UI's consoles. They include utility functions for formatting and templating metric data. |
 | **Consoles**        | Contains pre-built example dashboards or "consoles" that demonstrate how to display Prometheus data using templates and the libraries in console_libraries. These are rendered in the Prometheus web interface under `/consoles`. |
 | **Prometheus.yml**  | The main configuration file for Prometheus. You customize this file to fit your infrastructure. It defines:<br>- Scrape targets (what metrics to collect and from where) <br>- Alerting rules <br>- External labels <br>- Remote write/read targets <br>- Rule evaluation intervals |
+  
 
----
 
 ## **Prometheus as a Service**
 
@@ -89,9 +91,9 @@ WantedBy=multi-user.target
 - In the default configuration, there is a single job, called prometheus, which scrapes the time series data exposed by the Prometheus server.  
 - The job contains a single, statically configured, target — localhost on port 9090.  
 - Prometheus expects metrics to be available on targets on a path of /metrics.  
+  
 
----
-###Reference
+### Reference
 https://prometheus.io/docs/introduction/first_steps/#configuring-prometheus  
 https://prometheus.io/docs/prometheus/latest/configuration/configuration/  
 https://bindplane.com/docs/going-to-production/bindplane/architecture/prometheus/install-manual
