@@ -96,4 +96,5 @@ WantedBy=multi-user.target
 ### Reference
 https://prometheus.io/docs/introduction/first_steps/#configuring-prometheus  
 https://prometheus.io/docs/prometheus/latest/configuration/configuration/  
-https://bindplane.com/docs/going-to-production/bindplane/architecture/prometheus/install-manual
+https://bindplane.com/docs/going-to-production/bindplane/architecture/prometheus/install-manual  
+https://medium.com/@tech_18484/understand-prometheus-architecture-1ab83afd53b8
