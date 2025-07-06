@@ -20,7 +20,6 @@
 
   
 ![Prometheus-NodeExporter-Setup](https://miro.medium.com/v2/resize:fit:720/format:webp/1*H81MyuL03UTX7_MPKp6A0A.png)
-<img src="[./images/prometheus-setup.png](https://miro.medium.com/v2/resize:fit:720/format:webp/1*H81MyuL03UTX7_MPKp6A0A.png)" alt="Prometheus Architecture" width="400"/>  
 
   
 ### When user downloads Prometheus tar file, you get below files and directories:
