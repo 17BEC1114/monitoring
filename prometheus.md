@@ -67,31 +67,31 @@ WantedBy=multi-user.target
 ```
 
 ## Configuring Prometheus
-- We can configure Prometheus using the prometheus.yml file.  
-- The Prometheus download comes with a sample configuration in a file called prometheus.yml  
-- Prometheus is configured via command-line flags and a configuration file.  
-- The command-line flags configure immutable system parameters (such as storage locations, amount of data to keep on disk and in memory, etc.)  
-- The configuration file defines everything related to scraping jobs and their instances, as well as which rule files to load.  
-- There are three blocks of configuration in the example configuration file:  
-- - global
-- - rule_files
-- - scrape_configs
+  - We can configure Prometheus using the prometheus.yml file.  
+  - The Prometheus download comes with a sample configuration in a file called prometheus.yml  
+  - Prometheus is configured via command-line flags and a configuration file.  
+  - The command-line flags configure immutable system parameters (such as storage locations, amount of data to keep on disk and in memory, etc.)  
+  - The configuration file defines everything related to scraping jobs and their instances, as well as which rule files to load.  
+  - There are three blocks of configuration in the example configuration file:  
+    - global
+    - rule_files
+    - scrape_configs
 
 **global**
-- The global block controls the Prometheus server's global configuration.  
-- The scrape_interval controls how often Prometheus will scrape targets.  
-- The evaluation_interval option controls how often Prometheus will evaluate rules.  
+  - The global block controls the Prometheus server's global configuration.  
+  - The scrape_interval controls how often Prometheus will scrape targets.  
+  - The evaluation_interval option controls how often Prometheus will evaluate rules.  
 
 **rule_files**
-- The rule_files block specifies the location of any rules we want the Prometheus server to load.
+  - The rule_files block specifies the location of any rules we want the Prometheus server to load.
 
 **scrape_configs**
-- This controls what resources Prometheus monitors.  
-- Since Prometheus also exposes data about itself as an HTTP endpoint, it can scrape and monitor its own health.  
-- In the default configuration, there is a single job, called prometheus, which scrapes the time series data exposed by the Prometheus server.  
-- The job contains a single, statically configured, target — localhost on port 9090.  
-- Prometheus expects metrics to be available on targets on a path of /metrics.  
-  
+  - This controls what resources Prometheus monitors.  
+  - Since Prometheus also exposes data about itself as an HTTP endpoint, it can scrape and monitor its own health.  
+  - In the default configuration, there is a single job, called prometheus, which scrapes the time series data exposed by the Prometheus server.  
+  - The job contains a single, statically configured, target — localhost on port 9090.  
+  - Prometheus expects metrics to be available on targets on a path of /metrics.  
+    
 
 ### Reference
 https://prometheus.io/docs/introduction/first_steps/#configuring-prometheus  
