@@ -17,9 +17,12 @@
 - These **HTTP endpoints** are the ports/paths where node exporter is exporting the metrics.
 - The **targets** are the nodes/instances from which Prometheus will collect the metrics.
 
+
   
+![Prometheus-NodeExporter-Setup](https://miro.medium.com/v2/resize:fit:720/format:webp/1*H81MyuL03UTX7_MPKp6A0A.png)
   
 
+  
 ### When user downloads Prometheus tar file, you get below files and directories:
 
 | File/Directory      | Description |
